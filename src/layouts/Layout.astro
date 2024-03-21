@@ -1,0 +1,32 @@
+---
+import Header from "../components/Header.astro"
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/image-index.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page de infinite, un producto falso sobre almacenamiento en la nube para diferentes archivos y diferentes planes de pago">
+    <title>Landing page Infinite, producto de almacenamiento en la nube</title>
+</head>
+<body>
+    <Header />
+    <slot />
+</body>
+</html>
+
+<style is:global>
+    * {
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        background: #202020;
+        color: #fff;
+    }
+</style>

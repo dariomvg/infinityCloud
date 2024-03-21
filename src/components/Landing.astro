@@ -1,0 +1,17 @@
+---
+import video from "../assets/images/video.gif";
+import { Image } from "astro:assets";
+import "../styles/Landing.css"
+---
+
+<section class="section-landing">
+      <div class="container-titles">
+         <h1 class="title-landing">Almacena tus datos de forma segura con infinityCloud</h1>   
+         <p class="description">Con <b>InfinityCloud</b> centraliza, Colabora, y Protege tú almacenamiento en la Nube para Simplificar, Potenciar y Asegurar tus Archivos Digitales.</p> 
+         <div class="container-input">
+            <input type="text" placeholder="Correo electrónico" class="input-landing" />
+            <button class="btn-landing" >Prueba grátis</button>
+         </div>
+      </div>
+      <Image src={video} alt="video landing" width="400" height="400" class="video-landing" loading="eager" />
+</section>

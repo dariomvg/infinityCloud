@@ -1,0 +1,31 @@
+---
+import "../styles/Feature.css";
+import imgEarth from "../assets/images/image-earth.png";
+import { Image } from "astro:assets";
+---
+
+<section class="section-feature">
+    <Image src={imgEarth} alt="imagen de una tierra" width="400" height="400" class="img-feature" loading="eager" />
+    <div class="feature">
+        <h3 class="title-feature">Descubre por qué millones de desarrolladores eligen <b class="logo-feature">InfinityCloud</b> para almacenar sus datos de su negocio, desde el primer paso hasta una red completa.    
+        </h3>
+        <section class="container-boxes">
+            <div class="box-feature">
+                <h3 class="title-box">Millones</h3>
+                <p class="subtitle-box">de desarrolladores en el mundo</p>
+            </div>
+            <div class="box-feature">
+                <h3 class="title-box">Miles</h3>
+                <p class="subtitle-box">de empresas en el mundo</p>
+            </div>
+            <div class="box-feature">
+                <h3 class="title-box">Nº1</h3>
+                <p class="subtitle-box">en países líderes como EE.UU, Suiza, Inglaterra, etc.</p>
+            </div>
+            <div class="box-feature">
+                <h3 class="title-box">180+</h3>
+                <p class="subtitle-box">países representados</p>
+            </div>
+        </section>
+    </div>
+</section>

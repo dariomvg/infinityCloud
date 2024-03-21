@@ -1,0 +1,18 @@
+---
+const { title, description, image } = Astro.props;
+import { Image } from "astro:assets";
+import Button from "../components/Button.astro";
+import "../styles/Details.css";
+---
+
+<div class="card-details">
+    <Image src={image} width="200" height="200" alt={`${title}`} loading="lazy" />
+
+    <h2 class="title-details">{title}</h2>
+    <p class="description-details">
+        {description}
+    </p>
+   <Button>
+        Más información
+   </Button>
+</div>

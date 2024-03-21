@@ -1,0 +1,9 @@
+---
+import CardPlan from "../cards/CardPlan.astro";
+import {plans} from "../libs/content-plans";
+import "../styles/Plans.css";
+---
+
+<section class="section-plans"> 
+    {plans.map((item) => <CardPlan {...item}/>)}
+</section>

@@ -1,0 +1,9 @@
+---
+import "../styles/Details.css";
+import CardDetails from "../cards/CardDetails.astro";
+import { details } from "../libs/content-details";
+---
+
+<section class="section-details">
+    {details.map(detail => <CardDetails {...detail}/>)}
+</section>

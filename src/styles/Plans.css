@@ -1,0 +1,75 @@
+.section-plans {
+    width: 100%;
+    height:80vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        #ffffff,
+        #f9f9f9,
+        #f3f3f3,
+        #ededed,
+        #e7e7e7
+      );
+      color: #000;
+}
+
+.card-plan {
+    width: 320px;
+    height: 420px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px #4f4f4f;
+}
+
+.title-plans {
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-prices {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.price-before {
+    font-size: 20px;
+    color: gray;
+    text-decoration: line-through;
+}
+.price-now {
+    color: #22cd22;
+    font-size: 30px;
+    font-weight: bold;
+}
+.list-details-plan {
+    display: grid;
+    gap: 10px;
+}
+.detail-plan {
+    list-style: none;
+    font-weight: 500;
+}
+.container-btn-plan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 948px) {
+    .section-plans {
+        height: auto;
+    }
+
+}

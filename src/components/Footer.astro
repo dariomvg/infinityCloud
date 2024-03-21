@@ -1,0 +1,42 @@
+---
+import "../styles/Footer.css";
+import { Image } from "astro:assets";
+import iconFacebook from "../assets/icons/icon-facebook.png"
+import iconinstagram from "../assets/icons/icon-instagram.png"
+import iconTwitter from "../assets/icons/icon-twitter.png"
+import iconAyuda from "../assets/icons/ayuda.svg"
+import iconDocs from "../assets/icons/docs.svg"
+import iconEmpresa from "../assets/icons/empresas.svg"
+import iconHome from "../assets/icons/home.svg"
+---
+
+<footer class="footer">
+    <section class="container-contacts">
+            <ul>
+                <li class="link">
+                    <Image src={iconHome} alt="icon home" width="25" height="25" loading="lazy" />
+                    <p>Sobre nosotros</p>
+                </li>
+                <li class="link">
+                    <Image src={iconEmpresa} alt="icon empresa" width="25" height="25" loading="lazy" />
+                    <p>Empresas</p>
+                </li>
+                <li class="link">
+                    <Image src={iconDocs} alt="icon docs" width="25" height="25" loading="lazy" />
+                    <p>Documentación</p>
+                </li>
+                <li class="link">
+                    <Image src={iconAyuda} alt="icon ayuda" width="25" height="25" loading="lazy" />
+                    <p>Ayuda</p>
+                </li>
+            </ul>     
+        <div class="cont-redes-footer">
+            <Image src={iconFacebook} alt="icon facebook" width="35" height="35" class="red-link" loading="lazy" />
+            <Image src={iconTwitter} alt="icon twitter" width="35" height="35" class="red-link" loading="lazy" />
+            <Image src={iconinstagram} alt="icon instagram" width="35" height="35" class="red-link" loading="lazy" />
+        </div>
+    </section>
+    <p class="title-copyright">
+        ©2024 InfinityCloud
+    </p>
+</footer>

@@ -1,0 +1,9 @@
+---
+import "../styles/Button.css";
+import iconArrow from "../assets/icons/icon-flecha.png";
+import { Image } from "astro:assets";
+---
+<button class="btn">
+    <slot />
+    <Image src={iconArrow} width="20" height="20" alt="icon arrow" loading="lazy" />
+</button>

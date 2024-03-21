@@ -1,0 +1,47 @@
+.footer {
+    color: #000;
+  background-color: #f2f2f2;
+    width: 100%;
+    padding: 10px;
+}
+
+.container-contacts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.link:hover {
+    text-decoration: underline;
+    
+}
+.cont-redes-footer{
+    display: flex;
+    gap: 14px;
+}
+.red-link {
+    transition: all .5s;
+
+}
+.red-link:hover {
+    cursor: pointer;
+    transition: all .5s;
+    transform: scale(1.2);
+}
+
+.title-copyright {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}

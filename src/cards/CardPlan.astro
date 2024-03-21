@@ -1,0 +1,27 @@
+---
+const {title, priceNow, priceBefore, details} = Astro.props; 
+import Button from "../components/Button.astro";
+import "../styles/Plans.css"
+---
+
+
+<div class="card-plan">
+    <h3 class="title-plans">{title}</h3>
+    <div class="container-prices">
+        <h3 class="price-before">{priceBefore}</h3>
+        <span class="price-now">{priceNow}</span>
+    </div>
+
+    <ul class="list-details-plan">
+        {details.map((detail) => <li class="detail-plan">{detail}</li>)}
+    </ul>
+    <div class="container-btn-plan">
+        <Button>
+            Probar versión grátis
+        </Button>
+        <Button>
+            Probar versión Paga
+        </Button>
+    </div>
+
+</div>
